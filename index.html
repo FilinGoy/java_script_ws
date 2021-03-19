@@ -28,9 +28,17 @@
                             <a class="nav-link" href="#">О нас</a>
                           </li>  
                         </ul>
-                        <form class="form-inline">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Избранное</button>
-                        </form>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-success dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Избранное
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                              <button class="dropdown-item" type="button">Фильтровать по количеству комнат</button>
+                              <button class="dropdown-item" type="button">Фильтровать по району</button>
+                              <button class="dropdown-item" type="button">Сортировать по цене</button>
+                              <button class="dropdown-item" type="button">Сортировать по площади</button>
+                            </div>
+                          </div>
                       </div>
                 </div>
             </nav>
@@ -39,12 +47,12 @@
     <main>
         <div class="container">
             <div class="row justify-content-between" id="main-img">
-                
+              
             </div>
         </div>
     </main>
     <footer>
-        <div class="container-fluid bg-dark text-light py-4 fixed-bottom">
+        <div class="container-fluid bg-dark text-light py-4 bottom">
             <div class="container">
                 <copyright>&copy; Copyright 2021 FG</copyright>   
             </div>
